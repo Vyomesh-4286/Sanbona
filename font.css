@@ -1,0 +1,71 @@
+@font-face {
+    font-family:'Gotham';
+    src: url('./font/Gotham-Light.eot');
+	src: url('./font/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+		url('./font/Gotham-Light.woff2') format('woff2'),
+		url('./font/Gotham-Light.woff') format('woff'),
+		url('./font/Gotham-Light.ttf') format('truetype'),
+		url('./font/Gotham-Light.svg#Gotham-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Gotham';
+    src: url('./font/Gotham-Book.eot');
+	src: url('./font/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+		url('./font/Gotham-Book.woff2') format('woff2'),
+		url('./font/Gotham-Book.woff') format('woff'),
+		url('./font/Gotham-Book.ttf') format('truetype'),
+		url('./font/Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+
+@font-face {
+    font-family:'Gotham';
+    src: url('./font/Gotham-Medium.eot');
+	src: url('./font/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+		url('./font/Gotham-Medium.woff2') format('woff2'),
+		url('./font/Gotham-Medium.woff') format('woff'),
+		url('./font/Gotham-Medium.ttf') format('truetype'),
+		url('./font/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-02DC;
+}
+
+
+@font-face {
+    font-family:'Gotham';
+    src: url('./font/Gotham-Bold.eot');
+	src: url('./font/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+		url('./font/Gotham-Bold.woff2') format('woff2'),
+		url('./font/Gotham-Bold.woff') format('woff'),
+		url('./font/Gotham-Bold.ttf') format('truetype'),
+		url('./font/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family: 'MinionPro-Regular';
+    src: url('./font/MinionPro-Regular.eot');
+    src: url('./font/MinionPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./font/MinionPro-Regular.woff2') format('woff2'),
+        url('./font/MinionPro-Regular.woff') format('woff'),
+        url('./font/MinionPro-Regular.ttf') format('truetype'),
+        url('./font/MinionPro-Regular.svg#MinionPro-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+

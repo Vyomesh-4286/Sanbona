@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanbona</title>
+
+    <script src="/[YOUR_DIRECTORY]/gsap.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./node_modules/wowjs/css/libs/animate.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header w-full absolute top-0">
+        <div class="my-58 mx-33 lg:mr-80">
+            <nav class="header-navbar header_inner grid lg:grid-cols-3 grid-cols-2">
+                <div class="navbar-brand header__logo z-2">
+                    <div class=" flex justify-start">
+                        <a href="#"><img src="./image/svg/sanbona_logo.svg" alt="sanbona_logo"></a>
+                    </div>
+                </div>
+                <div class="main-navbar-container header__menu--inner hidden lg:flex justify-center items-center z-2">
+                    <ul class=" flex space-x-35">
+                        <li
+                            class="font-Gotham font-normal text-xs leading-11 tracking-0.06 uppercase text-white duration-500 ease-in-out cursor-pointer">
+                            <a href="#"
+                                class="relative after:absolute after:block after:w-0 after:pt-1 after:border-b after:duration-300 hover:after:w-full">Accommodation</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-xs leading-11 tracking-0.06 uppercase text-white duration-500 ease-in-out cursor-pointer">
+                            <a href="#"
+                                class="relative after:absolute after:block after:w-0 after:pt-1 after:border-b after:duration-300 hover:after:w-full">Experiences</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-xs leading-11 tracking-0.06 uppercase text-white duration-500 ease-in-out cursor-pointer">
+                            <a href="#"
+                                class="relative after:absolute after:block after:w-0 after:pt-1 after:border-b after:duration-300 hover:after:w-full">Conservation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub-navbar-container flex justify-end items-center">
+                    <div class="navbar-button z-2 enquiry-sidebar">
+                        <div class="hidden lg:flex">
+                            <a href="javascript:void(0)"
+                                class="font-Gotham font-bold text-11 tracking-0.06 uppercase text-white text-center px-42 py-13 border-1.5 border-white border-opacity-60 cursor-pointer hover:bg-orangeshade hover:border-orangeshade duration-500 ease-in-out">
+                                Make a booking
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-icon header__menu--toggle menu-open-test cursor-pointer ml-23 hamburger">
+                        <div class="line w-19"></div>
+                        <div class="line w-19"></div>
+                        <div class="line w-19"></div>
+                    </div>
+                    <div
+                        class="navbar-icon header__menu--toggle cursor-pointer ml-23 hamburger-enquiry hidden enquiry__menu__open">
+                        <div class="line w-19"></div>
+                        <div class="line w-19"></div>
+                        <div class="line w-19"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Menu Sidebar Start -->
+    <div class="main-nav nav-container lg:overflow-hidden overflow-y-auto">
+        <div class="menu-overlay h-screen fixed w-full top-0 right-0"></div>
+        <div class="humburger-menu--header">
+            <div class="md:flex flex-wrap md:space-y-0 space-y-3">
+                <div class="md:w-1/2 w-full navbar-brand z-3">
+                    <div class="flex justify-start">
+                        <a href="#"><img src="./image/svg/sanbona_logo_1.svg" alt="sanbona_logo"></a>
+                    </div>
+                </div>
+                <div
+                    class="md:w-1/2 w-full sub-navbar-container flex flex-wrap md:space-y-0 space-y-3 justify-end items-center z-3">
+                    <a href="tel: +27 (0) 21 010 0028"
+                        class="font-Gotham font-normal text-10 leading-3 tracking-0.06 uppercase text-orangeshade hover:text-grayshade hover:-translate-x-2 duration-300 ease-in-out">
+                        +27 (0) 21 010 0028
+                    </a>
+                    <div class="navbar-button ml-9 z-3">
+                        <a href="javascript:void(0)">
+                            <div
+                                class="enquiry-sidebar font-Gotham font-bold text-11 tracking-0.06 uppercase text-white text-center bg-orangeshade border cursor-pointer border-orangeshade px-42 py-15 hover:bg-orangeshade1 hover:border-orangeshade1 duration-500 ease-in-out">
+                                Make a booking</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainNav__wrap">
+            <div class="sm:flex mainNav__wrap--inner sm:space-y-0 space-y-3">
+                <div class="lg:w-1/3 sm:w-1/2 w-full">
+                    <ul class="space-y-26">
+                        <li
+                            class="font-Gotham font-normal sm:text-34 text-xl tracking-0.06 capitalize text-orangeshade hover:text-grayshade hover:translate-x-2 duration-300 ease-in-out">
+                            <a href="#">Accommodation</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal sm:text-34 text-xl tracking-0.06 capitalize text-orangeshade hover:text-grayshade hover:translate-x-2 duration-300 ease-in-out">
+                            <a href="#">Experiences</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal sm:text-34 text-xl tracking-0.06 capitalize text-orangeshade hover:text-grayshade hover:translate-x-2 duration-300 ease-in-out">
+                            <a href="#">Conservation</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal sm:text-34 text-xl tracking-0.06 capitalize text-orangeshade hover:text-grayshade hover:translate-x-2 duration-300 ease-in-out">
+                            <a href="#">Our Story</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-2/3 sm:w-1/2 w-full pt-3 flex lg:justify-center sm:justify-end justify-start">
+                    <div
+                        class="lg:flex xl:space-x-120 lg:space-x-60 lg:space-y-0 space-y-30 lg:h-auto h-48 lg:overflow-hidden overflow-y-auto">
+                        <ul class="lg:w-1/3 w-full space-y-27 lg:text-left sm:text-right">
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Experiences</a>
+                            </li>
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Conservation</a>
+                            </li>
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Our Story</a>
+                            </li>
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Location</a>
+                            </li>
+                        </ul>
+                        <ul class="lg:w-1/3 w-full space-y-27 lg:text-left sm:text-right">
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Destination</a>
+                            </li>
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Offers</a>
+                            </li>
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Rates</a>
+                            </li>
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Gallery</a>
+                            </li>
+                        </ul>
+                        <ul class="lg:w-1/3 w-full space-y-27 lg:text-left sm:text-right">
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Faq’s</a>
+                            </li>
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Agent zone</a>
+                            </li>
+                            <li
+                                class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade hover:text-orangeshade lg:hover:translate-x-2 hover:-translate-x-2 lg:pr-0 pr-3 duration-300 ease-in-out">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mainNav_wrap--inner-sub mt-51 lg:overflow-hidden overflow-x-auto">
+                <div class="mainNav_wrap--inner-sub-imgGrid">
+                    <img class="w-full object-cover" src="./image/Humburger-img-1.jpg" alt="">
+                    <a href="#">
+                        <p
+                            class="my-26 font-Gotham font-normal text-13 leading-3 tracking-0.06 text-center text-orangeshade hover:text-grayshade hover:-translate-y-2 duration-300 ease-in-out">
+                            Dwyka Tented Lodge</p>
+                    </a>
+                </div>
+                <div class="mainNav_wrap--inner-sub-imgGrid">
+                    <img class="w-full object-cover" src="./image/Humburger-img-2.jpg" alt="">
+                    <a href="#">
+                        <p
+                            class="my-26 font-Gotham font-normal text-13 leading-3 tracking-0.06 text-center text-orangeshade hover:text-grayshade hover:-translate-y-2 duration-300 ease-in-out">
+                            Gondwana Family Lodge</p>
+                    </a>
+                </div>
+                <div class="mainNav_wrap--inner-sub-imgGrid">
+                    <img class="w-full object-cover" src="./image/Humburger-img-3.jpg" alt="">
+                    <a href="#">
+                        <p
+                            class="my-26 font-Gotham font-normal text-13 leading-3 tracking-0.06 text-center text-orangeshade hover:text-grayshade hover:-translate-y-2 duration-300 ease-in-out">
+                            Tilney Manor</p>
+                    </a>
+                </div>
+                <div class="mainNav_wrap--inner-sub-imgGrid">
+                    <img class="w-full object-cover" src="./image/Humburger-img-4.jpg" alt="">
+                    <a href="#">
+                        <p
+                            class="my-26 font-Gotham font-normal text-13 leading-3 tracking-0.06 text-center text-orangeshade hover:text-grayshade hover:-translate-y-2 duration-300 ease-in-out">
+                            Explorer Camp</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Menu Sidebar End -->
+
+    <!-- Enquiry Sidebar Start -->
+    <div class="enquiry-main enquiry-container">
+        <div class="menu-overlay h-full fixed w-full top-0 right-0 bg-primary"></div>
+        <div class="enquiry-wrap py-180">
+            <div class="flex flex-col items-center w-full px-122">
+                <div>
+                    <h1 class="font-Gotham font-normal text-32 text-right tracking-0.06 capitalize text-orangeshade">
+                        Make a Direct Booking</h1>
+                    <div class="flex justify-end">
+                        <p
+                            class="w-2/3 mt-3 mb-10 font-Gotham font-normal text-sm text-right text-grayshade opacity-70">
+                            Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                    </div>
+                    <div class="flex justify-end">
+                        <a href="#">
+                            <div
+                                class="enquiry-sidebar font-Gotham font-bold text-11 tracking-0.06 uppercase text-orangeshade1 bg-transparent border cursor-pointer border-orangeshade1 px-42 py-15 hover:bg-orangeshade1 hover:border-orangeshade1 hover:text-whiteshade duration-500 ease-in-out">
+                                Make a booking</div>
+                        </a>
+                    </div>
+                </div>
+                <hr class="w-full border-t border-orangeshade1 border-opacity-40 my-51">
+                <div>
+                    <h1 class="font-Gotham font-normal text-32 text-right tracking-0.06 capitalize text-orangeshade">
+                        Guest Enquiry</h1>
+                    <div class="flex justify-end">
+                        <p
+                            class="w-2/3 mt-3 mb-10 font-Gotham font-normal text-sm text-right text-grayshade opacity-70">
+                            Lorem ipsum dolor
+                            sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+                    </div>
+                    <div class="flex justify-end">
+                        <a href="#">
+                            <div
+                                class="enquiry-sidebar font-Gotham font-bold text-11 tracking-0.06 uppercase text-orangeshade1 bg-transparent border cursor-pointer border-orangeshade1 px-42 py-15 hover:bg-orangeshade1 hover:border-orangeshade1 hover:text-whiteshade duration-500 ease-in-out">
+                                Make an Enquiry</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Enquiry Sidebar End -->
+
+    <!-- Main Start -->
+    <main>
+        <section class="banner relative w-full">
+            <div class="bg-black mix-blend-multiply opacity-30 w-full h-full absolute top-0 z-1"></div>
+            <img class="w-full min-h-full h-screen object-cover"
+                src="./image/Tilney Manor exterior and public areas.jpg" alt="">
+            <div class="absolute top-1/2 z-2 w-3/5 left-1/2 -translate-x-1/2">
+                <ul class="flex flex-wrap justify-center space-x-11 mb-27 sm:gap-0 gap-y-8">
+                    <li class="font-Minion font-normal text-13 tracking-0.18 text-white">UNTAMED</li>
+                    <li class="my-auto hidden sm:flex"><img src="./image/svg/Rectangle.svg" alt=""></li>
+                    <li class="font-Minion font-normal text-13 tracking-0.18 text-white">UNTOUCHED</li>
+                    <li class="my-auto hidden sm:flex"><img src="./image/svg/Rectangle.svg" alt=""></li>
+                    <li class="font-Minion font-normal text-13 tracking-0.18 text-white">UNFORGETTABLE</li>
+                </ul>
+                <h1
+                    class="font-Gotham font-light lg:text-46 md:text-32 text-lg text-center tracking-0.04 capitalize text-white mb-58">
+                    Conservation-Based Safaris in the Heart of the Little Karoo</h1>
+                <div class="flex justify-center">
+                    <a href="#">
+                        <div
+                            class="font-Gotham font-bold text-11 tracking-0.06 uppercase text-white text-center bg-orangeshade border cursor-pointer border-orangeshade px-42 py-13 hover:bg-transparent hover:border-white duration-500 ease-in-out">
+                            View accommodation</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="common z-10 welcome">
+            <div class="lg:py-161 md:py-120 py-60 mx-auto">
+                <h1
+                    class="font-Gotham font-light md:text-36 text-22 text text-center tracking-0.06 capitalize text-orangeshade mb-32">
+                    Uncover
+                    the story Behind sanbona</h1>
+                <div class="flex justify-center mb-6">
+                    <p class="w-470 font-Gotham font-normal text-sm text-center text-grayshade opacity-70">Sanbona finds
+                        its roots lodged deeply within South Africa's rich history. You will discover San rock paintings
+                        dating back more than 3,500 years amongst the vast array of indigenous fauna and flora. The
+                        landscapes and wildlife beg you to admire them up-close, with twice-daily game drives, nature
+                        walks, birdwatching, photography, rock art tours, and stargazing activities. After a day of
+                        exploring, unwind with our various relaxation retreat offerings. Little ones will also be
+                        entertained at our Gondwana Family Lodge, with plenty of child-friendly facilities and our Kids
+                        on Safari activities.</p>
+                </div>
+                <div class="flex justify-center">
+                    <div>
+                        <a href="#"
+                            class="font-Gotham font-bold text-10 tracking-0.06 uppercase text-orangeshade1 text-center px-27 py-3 border border-orangeshade1 border-opacity-60 cursor-pointer hover:bg-orangeshade1 hover:border-opacity-100 hover:text-white duration-500 ease-in-out">
+                            Explore our story
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="common zigzag lg:pb-120 pb-60">
+            <div class="lg:flex">
+                <div class="lg:w-5/12 w-full ml-auto lg:my-auto my-7">
+                    <div class="zigzag-content">
+                        <h6
+                            class="font-Minion font-normal text-sm leading-17 tracking-0 04 text-orangeshade1 uppercase mb-7">
+                            Accommodation</h6>
+                        <h1
+                            class="lg:w-10/12 font-Gotham font-light md:text-36 text-22 tracking-0 06 capitalize text-grayshade mb-19">
+                            A
+                            Mindful Safari
+                            in the Middle of Nowhere </h1>
+                        <p class="lg:w-2/3 font-Gotham font-normal text-sm text-grayshade opacity-70 mb-42">Sanbona
+                            Wildlife Reserve
+                            invites you for a high-end, conservation-based nature safari in the vast and varied
+                            landscapes
+                            of the unique Little Karoo. It's the closest true wildlife experience you can find near Cape
+                            Town, a short three-hour drive away, offering exclusive and unique malaria-free safaris.
+                            From
+                            the classic Tilney Manor to Gondwana Family Lodge welcoming children of all ages, there's
+                            something for everyone. Couples will love Dwyka Tented Lodge, set in a secluded horseshoe
+                            bend,
+                            and if you’re looking for something a bit more adventurous, Sanbona Explorer Camp offers an
+                            immersive walking safari experience. </p>
+                        <div class="flex justify-start">
+                            <a href="#">
+                                <div
+                                    class="font-Gotham font-bold text-10 tracking-0.06 uppercase text-orangeshade1 text-center px-27 py-3 border border-orangeshade1 border-opacity-60 cursor-pointer hover:bg-orangeshade1 hover:border-opacity-100 hover:text-white duration-500 ease-in-out">
+                                    Explore our accommodation</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-6/12 w-full flex items-center">
+                    <div class="zigzag-image w-full">
+                        <img class="w-full h-full object-cover" src="./image/Sanbona_Tab_1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="common pr-0 location-slider-main lg:pb-120 pb-60">
+            <div class="slider-heading flex mb-60 w-full">
+                <h1
+                    class="min-w-max font-Gotham font-light md:text-32 text-lg tracking-0.06 capitalize text-orangeshade mr-53">
+                    Find your perfect stay</h1>
+                <div class="w-full border-t h-px my-auto border-orangeshade1"></div>
+            </div>
+            <div class="swiper mySwiper relative">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="w-full h-513 object-cover" src="./image/Sanbona_Swiper-1_1.jpg" alt="">
+                        <h1
+                            class="font-Gotham font-light md:text-2xl text-base tracking-0.03 capitalize text-grayshade mt-26 mb-1">
+                            Dwyka Tented Lodge</h1>
+                        <p class="w-11/12 font-Gotham font-normal text-sm text-grayshade opacity-70 mb-26">Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <div class="flex">
+                            <div class="w-26 border-t h-px my-auto border-orangeshade1"></div>
+                            <a href="#">
+                                <h1
+                                    class="ml-2.5 font-Gotham font-bold text-10 uppercase text-orangeshade1 hover:text-orangeshade hover:translate-x-2 cursor-pointer duration-500 ease-in-out">
+                                    Explore</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-full h-513 object-cover" src="./image/Sanbona_Swiper-1_2.jpg" alt="">
+                        <h1
+                            class="font-Gotham font-light md:text-2xl text-base tracking-0.03 capitalize text-grayshade mt-26 mb-1">
+                            Gondwana Family Lodge</h1>
+                        <p class="w-11/12 font-Gotham font-normal text-sm text-grayshade opacity-70 mb-26">Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <div class="flex">
+                            <div class="w-26 border-t h-px my-auto border-orangeshade1"></div>
+                            <a href="#">
+                                <h1
+                                    class="ml-2.5 font-Gotham font-bold text-10 uppercase text-orangeshade1 hover:text-orangeshade hover:translate-x-2 cursor-pointer duration-500 ease-in-out">
+                                    Explore</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-full h-513 object-cover" src="./image/Sanbona_Swiper-1_3.jpg" alt="">
+                        <h1
+                            class="font-Gotham font-light md:text-2xl text-base tracking-0.03 capitalize text-grayshade mt-26 mb-1">
+                            Tilney Manor</h1>
+                        <p class="w-11/12 font-Gotham font-normal text-sm text-grayshade opacity-70 mb-26">Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <div class="flex">
+                            <div class="w-26 border-t h-px my-auto border-orangeshade1"></div>
+                            <a href="#">
+                                <h1
+                                    class="ml-2.5 font-Gotham font-bold text-10 uppercase text-orangeshade1 hover:text-orangeshade hover:translate-x-2 cursor-pointer duration-500 ease-in-out">
+                                    Explore</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="w-full h-513 object-cover" src="./image/Sanbona_Swiper-1_4.jpg" alt="">
+                        <h1
+                            class="font-Gotham font-light md:text-2xl text-base tracking-0.03 capitalize text-grayshade mt-26 mb-1">
+                            Explorer</h1>
+                        <p class="w-11/12 font-Gotham font-normal text-sm text-grayshade opacity-70 mb-26">Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        <div class="flex">
+                            <div class="w-26 border-t h-px my-auto border-orangeshade1"></div>
+                            <a href="#">
+                                <h1
+                                    class="ml-2.5 font-Gotham font-bold text-10 uppercase text-orangeshade1 hover:text-orangeshade hover:translate-x-2 cursor-pointer duration-500 ease-in-out">
+                                    Explore</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next z-20 bg-whiteshade-0">
+                    <div
+                        class="flex justify-center items-center duration-0.3 ease-in-out border border-orangeshade1 rounded-full bg-orangeshade1 hover:bg-transparent">
+                        <img class="mx-3 my-7.5 h-2.5" src="./image/svg/Arrow-Right-bg.svg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-prev mr-47px z-20 bg-whiteshade-0">
+                    <div
+                        class="flex justify-center items-center duration-0.3 ease-in-out border border-orangeshade1 rounded-full bg-orangeshade1 hover:bg-transparent">
+                        <img class="mx-3 my-7.5 h-2.5" src="./image/svg/Arrow-Left-bg.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="common zigzag lg:pb-120 pb-60">
+            <div class="lg:flex">
+                <div class="lg:w-5/12 w-full ml-auto lg:my-auto my-7 lg:order-2">
+                    <div class="zigzag-content">
+                        <h6
+                            class="font-Minion font-normal text-sm leading-17 tracking-0 04 text-orangeshade1 uppercase mb-7">
+                            location</h6>
+                        <h1
+                            class="lg:w-10/12 font-Gotham font-light md:text-36 text-22 tracking-0 06 capitalize text-grayshade mb-19">
+                            Space and Solitude</h1>
+                        <p class="lg:w-2/3 font-Gotham font-normal text-sm text-grayshade opacity-70 mb-42">Our
+                            extraordinary, vast landscapes truly set us apart from other safari options. It keeps you
+                            guessing, showing off something new around every turn. You'll marvel at the little things,
+                            morning fog clinging to a fascinating cactus, your guide's stories weaving together a bigger
+                            picture and understanding of the world around you. At the foot of the Warmwaterberg
+                            Mountains, Sanbona stretches across 58,000ha of wide-open plains, with mountain tops to
+                            gorgeous gorges and a wide array of untamed flowers and foliage. Enter our ethereal safari
+                            destination, where you'll become one with your surroundings, reaching the ultimate level of
+                            inner peace.</p>
+                        <div class="flex justify-start">
+                            <a href="#">
+                                <div
+                                    class="font-Gotham font-bold text-10 tracking-0.06 uppercase text-orangeshade1 text-center px-27 py-3 border border-orangeshade1 border-opacity-60 cursor-pointer hover:bg-orangeshade1 hover:border-opacity-100 hover:text-white duration-500 ease-in-out">
+                                    Explore our Location</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-6/12 w-full flex items-center">
+                    <div class="zigzag-image w-full">
+                        <img class="w-full object-cover" src="./image/Sanbona_Tab_2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="common zigzag lg:pb-120 pb-60">
+            <div class="lg:flex">
+                <div class="lg:w-5/12 w-full ml-auto lg:my-auto my-7">
+                    <div class="zigzag-content">
+                        <h6
+                            class="font-Minion font-normal text-sm leading-17 tracking-0 04 text-orangeshade1 uppercase mb-7">
+                            Experiences</h6>
+                        <h1
+                            class="lg:w-10/12 font-Gotham font-light md:text-36 text-22 tracking-0 06 capitalize text-grayshade mb-19">
+                            Adventure Awaits</h1>
+                        <p class="lg:w-2/3 font-Gotham font-normal text-sm text-grayshade opacity-70 mb-42">Sanbona
+                            finds
+                            its roots lodged deeply within South Africa's rich history. You will discover San rock
+                            paintings dating back more than 3,500 years amongst the vast array of indigenous fauna and
+                            flora. The landscapes and wildlife beg you to admire them up-close, with twice-daily game
+                            drives, nature walks, birdwatching, photography, rock art tours, and stargazing activities.
+                            After a day of exploring, unwind with our various relaxation retreat offerings. Little ones
+                            will also be entertained at our Gondwana Family Lodge, with plenty of child-friendly
+                            facilities and our Kids on Safari activities.
+                        </p>
+                        <div class="flex justify-start">
+                            <a href="#">
+                                <div
+                                    class="font-Gotham font-bold text-10 tracking-0.06 uppercase text-orangeshade1 text-center px-27 py-3 border border-orangeshade1 border-opacity-60 cursor-pointer hover:bg-orangeshade1 hover:border-opacity-100 hover:text-white duration-500 ease-in-out">
+                                    Explore our Experiences</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-6/12 w-full flex items-center">
+                    <div class="zigzag-image w-full">
+                        <img class="w-full object-cover" src="./image/Sanbona_Tab_3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="common pl-0 experiences-slider-main">
+            <div class="slider-heading flex w-full">
+                <div class="w-full border-t h-px my-auto border-orangeshade1"></div>
+                <div class="w-full flex flex-wrap lg:ml-53 ml-9">
+                    <h1
+                        class="font-Gotham font-light md:text-32 text-lg text-right tracking-0.06 capitalize text-orangeshade">
+                        Experience true Natural beauty</h1>
+                </div>
+            </div>
+            <div class="mt-2 xl:pb-28 lg:py-16 md:py-14 pt-10 md:pl-16 sm:pl-11 pl-6">
+                <div class="swiper mySwiper_1 relative">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="w-full h-630 object-cover" src="./image/Sanbona_Swiper.jpg" alt="">
+                            <p
+                                class="md:pl-161 flex flex-wrap md:justify-start justify-center bg-white py-30 font-Gotham text-base leading-7 font-normal text-orangeshade">
+                                Description</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-630 object-cover" src="./image/Sanbona_Swiper.jpg" alt="">
+                            <p
+                                class="md:pl-161 flex flex-wrap md:justify-start justify-center bg-white py-30 font-Gotham text-base leading-7 font-normal text-orangeshade">
+                                Description</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-630 object-cover" src="./image/Sanbona_Swiper.jpg" alt="">
+                            <p
+                                class="md:pl-161 flex flex-wrap md:justify-start justify-center bg-white py-30 font-Gotham text-base leading-7 font-normal text-orangeshade">
+                                Description</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-630 object-cover" src="./image/Sanbona_Swiper.jpg" alt="">
+                            <p
+                                class="md:pl-161 flex flex-wrap md:justify-start justify-center bg-white py-30 font-Gotham text-base leading-7 font-normal text-orangeshade">
+                                Description</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-630 object-cover" src="./image/Sanbona_Swiper.jpg" alt="">
+                            <p
+                                class="md:pl-161 flex flex-wrap md:justify-start justify-center bg-white py-30 font-Gotham text-base leading-7 font-normal text-orangeshade">
+                                Description</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-630 object-cover" src="./image/Sanbona_Swiper.jpg" alt="">
+                            <p
+                                class="md:pl-161 flex flex-wrap md:justify-start justify-center bg-white py-30 font-Gotham text-base leading-7 font-normal text-orangeshade">
+                                Description</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-630 object-cover" src="./image/Sanbona_Swiper.jpg" alt="">
+                            <p
+                                class="md:pl-161 flex flex-wrap md:justify-start justify-center bg-white py-30 font-Gotham text-base leading-7 font-normal text-orangeshade">
+                                Description</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-630 object-cover" src="./image/Sanbona_Swiper.jpg" alt="">
+                            <p
+                                class="md:pl-161 flex flex-wrap md:justify-start justify-center bg-white py-30 font-Gotham text-base leading-7 font-normal text-orangeshade">
+                                Description</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-630 object-cover" src="./image/Sanbona_Swiper.jpg" alt="">
+                            <p
+                                class="md:pl-161 flex flex-wrap md:justify-start justify-center bg-white py-30 font-Gotham text-base leading-7 font-normal text-orangeshade">
+                                Description</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full h-630 object-cover" src="./image/Sanbona_Swiper.jpg" alt="">
+                            <p
+                                class="md:pl-161 flex flex-wrap md:justify-start justify-center bg-white py-30 font-Gotham text-base leading-7 font-normal text-orangeshade">
+                                Description</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next z-20 bg-whiteshade-0">
+                        <div
+                            class="flex justify-center items-center duration-0.3 ease-in-out border border-orangeshade1 rounded-full bg-orangeshade1 hover:bg-transparent">
+                            <img class="mx-3 my-7.5 h-2.5" src="./image/svg/Arrow-Right-bg.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev mr-47px z-20 bg-whiteshade-0">
+                        <div
+                            class="flex justify-center items-center duration-0.3 ease-in-out border border-orangeshade1 rounded-full bg-orangeshade1 hover:bg-transparent">
+                            <img class="mx-3 my-7.5 h-2.5" src="./image/svg/Arrow-Left-bg.svg" alt="">
+                        </div>
+                    </div>
+                    <div
+                        class="pagination font-Gotham font-normal text-lg leading-17 text-orangeshade1 w-fit h-fit absolute lg:left-77 left-2 bottom-9 z-10">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="common zigzag lg:pb-120 pb-60">
+            <div class="lg:flex">
+                <div class="lg:w-5/12 w-full ml-auto lg:my-auto my-7 lg:order-2">
+                    <div class="zigzag-content">
+                        <h6
+                            class="font-Minion font-normal text-sm leading-17 tracking-0 04 text-orangeshade1 uppercase mb-7">
+                            Conservation</h6>
+                        <h1
+                            class="lg:w-10/12 font-Gotham font-light md:text-36 text-22 tracking-0 06 capitalize text-grayshade mb-19">
+                            Conserving Ancient heritage, ecosystems and landscapes</h1>
+                        <p class="lg:w-2/3 font-Gotham font-normal text-sm text-grayshade opacity-70 mb-42">Sanbona's
+                            unique setting and delicate ecosystem is something we respect and strive to protect with
+                            everything we do. Conservation is a core value at Sanbona, and, with every visit, you play a
+                            vital part in preserving the region for future generations. What started as a dream in 2011
+                            is a reality today. We're proud to be a highly respected player in conservation as we
+                            continue to guard the area's heritage, ecosystem and landscapes while creating employment
+                            opportunities to uplift the local communities.</p>
+                        <div class="flex justify-start">
+                            <a href="#">
+                                <div
+                                    class="font-Gotham font-bold text-10 tracking-0.06 uppercase text-orangeshade1 text-center px-27 py-3 border border-orangeshade1 border-opacity-60 cursor-pointer hover:bg-orangeshade1 hover:border-opacity-100 hover:text-white duration-500 ease-in-out">
+                                    Explore Conservation</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-6/12 w-full flex items-center">
+                    <div class="zigzag-image w-full">
+                        <img class="w-full object-cover" src="./image/Sanbona_Tab_4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="common card-section lg:pb-120 pb-60">
+            <div class="card-section-main-content">
+                <h6 class="font-Minion font-normal text-sm leading-17 tracking-0 04 text-orangeshade1 uppercase mb-21">
+                    Blog
+                </h6>
+                <h1
+                    class="lg:w-10/12 font-Gotham font-light md:text-36 text-22 tracking-0 06 capitalize text-grayshade mb-19">
+                    Explore
+                    stories from Sanbona’s plains</h1>
+                <p class="max-w-629 font-Gotham font-normal text-sm text-grayshade opacity-70 mb-42">Find out what's
+                    been
+                    happening in and around Sanbona, our conservation success stories, and more in our blog.</p>
+                <div class="flex mb-44">
+                    <div class="w-26 border-t h-px my-auto border-orangeshade1"></div>
+                    <a href="#">
+                        <h1
+                            class="ml-2.5 font-Gotham font-bold text-10 uppercase text-orangeshade1 hover:text-orangeshade hover:translate-x-2 cursor-pointer duration-500 ease-in-out">
+                            Explore our blog posts </h1>
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="grid lg:grid-cols-3 grid-cols-1 gap-32">
+                    <div class="grid-1">
+                        <img class="w-full object-cover" src="./image/Card-1.jpg" alt="">
+                        <div class="grid-content lg:w-3/4">
+                            <h1
+                                class="font-Gotham font-light md:text-2xl text-base tracking-0 03 capitalize text-grayshade my-35 mb-2.5">
+                                Finding the highly elusive Cape Leopard</h1>
+                            <p class="font-Gotham font-normal text-xs leading-5 text-grayshade opacity-70 mb-30">Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                            </p>
+                            <div class="flex mb-44">
+                                <div class="w-26 border-t h-px my-auto border-orangeshade1"></div>
+                                <a href="#">
+                                    <h1
+                                        class="ml-2.5 font-Gotham font-bold text-10 uppercase text-orangeshade1 hover:text-orangeshade hover:translate-x-2 cursor-pointer duration-500 ease-in-out">
+                                        Read More</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-2">
+                        <img class="w-full object-cover" src="./image/Card-2.jpg" alt="">
+                        <div class="grid-content lg:w-3/4">
+                            <h1
+                                class="font-Gotham font-light md:text-2xl text-base tracking-0 03 capitalize text-grayshade my-35 mb-2.5">
+                                A Safari with a purpose</h1>
+                            <p class="font-Gotham font-normal text-xs leading-5 text-grayshade opacity-70 mb-30">Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                            </p>
+                            <div class="flex mb-44">
+                                <div class="w-26 border-t h-px my-auto border-orangeshade1"></div>
+                                <a href="#">
+                                    <h1
+                                        class="ml-2.5 font-Gotham font-bold text-10 uppercase text-orangeshade1 hover:text-orangeshade hover:translate-x-2 cursor-pointer duration-500 ease-in-out">
+                                        Read More</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-3">
+                        <img class="w-full object-cover" src="./image/Card-3.jpg" alt="">
+                        <div class="grid-content lg:w-3/4">
+                            <h1
+                                class="font-Gotham font-light md:text-2xl text-base tracking-0 03 capitalize text-grayshade my-35 mb-2.5">
+                                Dung Beetle</h1>
+                            <p class="font-Gotham font-normal text-xs leading-5 text-grayshade opacity-70 mb-30">Lorem
+                                ipsum
+                                dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                            </p>
+                            <div class="flex mb-44">
+                                <div class="w-26 border-t h-px my-auto border-orangeshade1"></div>
+                                <a href="#">
+                                    <h1
+                                        class="ml-2.5 font-Gotham font-bold text-10 uppercase text-orangeshade1 hover:text-orangeshade hover:translate-x-2 cursor-pointer duration-500 ease-in-out">
+                                        Read More</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="common pr-0 experiences-slider-sub lg:pb-120 pb-60">
+            <div class="lg:flex">
+                <div class="content w-full lg:my-auto my-7">
+                    <h6
+                        class="font-Minion font-normal text-sm leading-17 tracking-0 04 text-orangeshade1 uppercase mb-21">
+                        connect with us
+                    </h6>
+                    <h1
+                        class="lg:w-10/12 font-Gotham font-light md:text-36 text-22 tracking-0 06 capitalize text-grayshade mb-19">
+                        Stay on safari with #sanbona</h1>
+                    <p class="lg:w-2/3 font-Gotham font-normal text-sm text-grayshade opacity-70 mb-42">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                    <div class="swiper-control h-10 flex flex-wrap">
+                        <div class="swiper-button-prev w-fit relative instagram-swiper-prev mr-10">
+                            <div
+                                class="flex justify-center items-center duration-0.3 ease-in-out border-2 border-orangeshade1 rounded-full hover:bg-orangeshade1 hover:bg-opacity-30 bg-transparent">
+                                <img class="ml-10.5 mr-12.5 my-9.5" src="./image/svg/Arrow-Left.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next w-fit relative instagram-swiper-next">
+                            <div
+                                class="flex justify-center items-center duration-0.3 ease-in-out border-2 border-orangeshade1 rounded-full hover:bg-orangeshade1 hover:bg-opacity-30 bg-transparent">
+                                <img class="ml-12.5 mr-10.5 my-9.5" src="./image/svg/Arrow-Right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider w-full">
+                    <div class="swiper mySwiper_2 relative">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="w-full lg:h-auto h-441 object-cover" src="./image/Sanbona_Swiper_1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="w-full lg:h-auto h-441 object-cover" src="./image/Sanbona_Swiper_2.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="w-full lg:h-auto h-441 object-cover" src="./image/Sanbona_Swiper_3.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="w-full lg:h-auto h-441 object-cover" src="./image/Sanbona_Swiper_1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="w-full lg:h-auto h-441 object-cover" src="./image/Sanbona_Swiper_2.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="w-full lg:h-auto h-441 object-cover" src="./image/Sanbona_Swiper_3.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <section class="inquiry-section-accordion accordion mb-241" id="accordionExample">
+            <div class="accordion-item rounded-none w-full bg-orangeshade1">
+                <h2 class="accordion-header mb-0 flex flex-wrap justify-center w-full" id="headingTwo">
+                    <button
+                        class="accordion-button collapsed relative flex flex-wrap items-center justify-center w-full py-7 px-5 transition focus:outline-none font-Gotham font-light md:text-22 text-base text-center tracking-0.06 capitalize text-white after:ml-4"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">Sign up for our newsletter and promotions
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse flex flex-wrap justify-center"
+                    aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body font-Gotham text-base font-normal py-4 px-6 text-white max-w-4xl">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae esse veniam eveniet
+                        repellat eius, illum temporibus, ipsum natus, inventore itaque animi? Sint provident fugiat,
+                        sunt rem, quisquam consectetur, deserunt laudantium fuga ea enim eum ullam nostrum recusandae
+                        nulla aspernatur vero quidem hic distinctio iste nisi ipsum. Quo quis minima consectetur
+                        voluptate rem corrupti praesentium commodi beatae voluptas doloremque soluta, similique nostrum
+                        fuga obcaecati, fugiat qui hic reprehenderit quia earum!
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="common footer mt-120 mb-180">
+            <div class="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-6">
+                <div class="flex flex-col items-center space-y-5">
+                    <a href="#"><img src="./image/svg/sanbona_logo_footer.svg" alt=""></a>
+                    <div class="flex gap-3">
+                        <a href="https://www.instagram.com/sanbonasafari/?hl=en"><img
+                                class="hover:-translate-y-2 duration-500 ease-in-out" src="./image/svg/Instagram.svg"
+                                alt=""></a>
+                        <a href="https://www.facebook.com/SanbonaWildlifeReserve/"><img
+                                class="hover:-translate-y-2 duration-500 ease-in-out" src="./image/svg/Facebook.svg"
+                                alt=""></a>
+                        <a href="https://www.youtube.com/watch?v=TjDMMEl57Fg"><img
+                                class="hover:-translate-y-2 duration-500 ease-in-out" src="./image/svg/Youtube.svg"
+                                alt=""></a>
+                        <a href="https://www.tumblr.com/tagged/sanbona?sort=top"><img
+                                class="hover:-translate-y-2 duration-500 ease-in-out" src="./image/svg/Tumblr.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:items-start items-center">
+                    <ul class="space-y-5 lg:text-left text-center">
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Accommodation</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-13 leading-3 tracking-0.06 text-orangeshade duration-500 ease-in-out hover:translate-x-2 hover:text-grayshade">
+                            <a href="#">Dwyka Tented Lodge</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-13 leading-3 tracking-0.06 text-orangeshade duration-500 ease-in-out hover:translate-x-2 hover:text-grayshade">
+                            <a href="#">Gondwana Family Lodge</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-13 leading-3 tracking-0.06 text-orangeshade duration-500 ease-in-out hover:translate-x-2 hover:text-grayshade">
+                            <a href="#">Tilney Manor</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-13 leading-3 tracking-0.06 text-orangeshade duration-500 ease-in-out hover:translate-x-2 hover:text-grayshade">
+                            <a href="#">Explorer Camp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-center lg:items-start items-center">
+                    <ul class="space-y-27 lg:text-left text-center">
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Experiences</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Conservation</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Our Story</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Location</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-center lg:items-start items-center">
+                    <ul class="space-y-27 lg:text-left text-center">
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Destination</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Offers</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Rates</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-center lg:items-start items-center">
+                    <ul class="space-y-27 lg:text-left text-center">
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Faq’s</a>
+                        </li>
+                        <li
+                            class="font-Gotham font-normal text-15 tracking-0.06 uppercase text-grayshade duration-500 ease-in-out hover:translate-x-2 hover:text-orangeshade mb-6">
+                            <a href="#">Contact </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col lg:items-end items-center">
+                    <a href="#">
+                        <div
+                            class="font-Gotham font-bold text-11 tracking-0.06 uppercase text-white text-center px-42 py-15 bg-orangeshade hover:bg-orangeshade1 border border-orangeshade hover:border-orangeshade1 mb-21">
+                            Make a booking</div>
+                    </a>
+                    <a href="tel:021-5555555">
+                        <p
+                            class="font-Gotham font-normal text-xs leading-5 text-right text-grayshade opacity-60 hover:opacity-100 hover:-translate-x-2 duration-500 ease-in-out">
+                            Tel: 021 5555555</p>
+                    </a>
+                    <a href="mailto:info@sanbona.com">
+                        <p
+                            class="font-Gotham font-normal text-xs leading-5 text-right text-grayshade opacity-60 hover:opacity-100 hover:-translate-x-2 duration-500 ease-in-out">
+                            Email: info@sanbona.com
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="common footer-sticky py-21">
+            <div class="grid md:grid-cols-2 grid-cols-1 text-grayshade md:space-y-0 space-y-21">
+                <p
+                    class="flex flex-wrap md:justify-start justify-center md:text-left text-center font-Gotham font-normal text-13 leading-21 tracking-0.02 text-grayshade opacity-30">
+                    © Sanbona 2022. All rights reserved.</p>
+                <div class="ConditionWithPolicy">
+                    <ul class="flex flex-wrap md:justify-end justify-center gap-y-8">
+                        <li
+                            class="font-Gotham tracking-0.02 text-13 leading-21 text-right font-normal text-grayshade hover:text-orangeshade opacity-30 hover:opacity-60 after:px-2 after:content-['|'] after:opacity-60 hover:after:opacity-30">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.02 text-13 leading-21 text-right font-normal text-grayshade hover:text-orangeshade opacity-30 hover:opacity-60 after:px-2 after:content-['|'] after:opacity-60 hover:after:opacity-30">
+                            <a href="#">Privacy policy</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.02 text-13 leading-21 text-right font-normal text-grayshade hover:text-orangeshade opacity-30 hover:opacity-60 after:px-2 after:content-['|'] after:opacity-60 hover:after:opacity-30">
+                            <a href="#">Covid-19 Policy</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.02 text-13 leading-21 text-right font-normal text-grayshade hover:text-orangeshade opacity-30 hover:opacity-60">
+                            <a href="#">Legal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
+
+<script type="text/javascript" src="./node_modules/gsap/dist/gsap.min.js"></script>
+<script type="text/javascript" src="./node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="./node_modules/wowjs/dist/wow.min.js"></script>
+<script src="./index.js"></script>
+
+<script>
+    //location-slider-main
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 3.2,
+        spaceBetween: 30,
+        breakpoints: {
+            0: {
+                slidesPerView: 1.4,
+            },
+            640: {
+                slidesPerView: 2.0,
+            },
+            1024: {
+                slidesPerView: 2.6,
+            },
+            1536: {
+                slidesPerView: 3.2
+            },
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    //experiences-slider-main
+    var swiper = new Swiper(".mySwiper_1", {
+        slidesPerView: 1,
+        spaceBetween: 36,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.pagination',
+            type: 'fraction',
+            formatFractionCurrent: function (number) {
+                return ('' + number + ' ').slice(-3);
+            },
+            formatFractionTotal: function (number) {
+                return ('' + ' ' + number).slice(-3);
+            },
+            renderFraction: function (currentClass, totalClass) {
+                return '<sup><span class="' + currentClass + '"></span></sup>' +
+                    '<span>/</span>' +
+                    '<sub><span class="' + totalClass + '"></span></sub>';
+            }
+        },
+    });
+
+    //experiences-slider-sub
+    var swiper = new Swiper(".mySwiper_2", {
+        slidesPerView: 2.4,
+        spaceBetween: 29,
+        breakpoints: {
+            0: {
+                slidesPerView: 1.7,
+            },
+            640: {
+                slidesPerView: 2.2
+            },
+            1024: {
+                slidesPerView: 2.2
+            },
+        },
+        navigation: {
+            nextEl: '.instagram-swiper-next',
+            prevEl: '.instagram-swiper-prev',
+        },
+    });
+</script>
+
+</html>
